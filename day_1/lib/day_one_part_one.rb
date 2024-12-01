@@ -1,4 +1,4 @@
-class AdventOfCode
+class DayOnePartOne
   def initialize(input_file)
     @input_file = input_file
   end
@@ -32,7 +32,3 @@ class AdventOfCode
     all_differences.sum
   end
 end
-
-
-aoc = AdventOfCode.new("input.txt")
-puts "Result: #{aoc.solve}"

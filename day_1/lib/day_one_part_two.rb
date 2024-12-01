@@ -1,4 +1,4 @@
-class AdventOfCode
+class DayOnePartTwo
   def initialize(input_file)
     @input_file = input_file
   end
@@ -23,16 +23,11 @@ class AdventOfCode
   def solve
     sorted_array = sort(read_input)
 
-    zipped = sorted_array[0].zip(sorted_array[1])
-
-    all_differences = zipped.map do | two_numbered_array|
-      difference(two_numbered_array)
+    prob_arr = sorted_array[0].map do | left_element |
+      appears = sorted_array[1].count(left_element)
+      left_element * appears
     end
 
-    all_differences.sum
+    prob_arr.sum
   end
 end
-
-
-aoc = AdventOfCode.new("input.txt")
-puts "Result: #{aoc.solve}"
