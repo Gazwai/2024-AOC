@@ -1,4 +1,4 @@
-require 'day_one_part_one.rb'
+require_relative '../lib/day_one_part_one.rb'
 
 RSpec.describe DayOnePartOne do
   describe '#solve' do
