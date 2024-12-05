@@ -1,0 +1,15 @@
+.M.S......
+..A..MSMS.
+.M.S.MAA..
+..A.ASMSM.
+.M.S.M....
+..........
+S.S.S.S.S.
+.A.A.A.A..
+M.M.M.M.M.
+..........
+
+Now I have to find X's of MAS.
+
+I can hit an A and then check the top left, top right,
+bottom left and bottom right and then count if they have 2 S and 2 M
